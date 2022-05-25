@@ -28,4 +28,4 @@ if __name__ == '__main__':
 
     Survey_df1=Survey_df.withColumn("Date",to_date(lit("2022-05-21")))
     Survey_df1.show()
-
+    Survey_df1.write.option("header", True).csv(r"E:\Data Cloud Engineer\Sparkproject\Surveydetails\Target")
