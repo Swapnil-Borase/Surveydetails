@@ -26,5 +26,6 @@ if __name__ == '__main__':
     Survey_df.show()
     Survey_df.printSchema()
 
-    Survey_df1=Survey_df.withColumn("Future_Date",lit(""))
+    Survey_df1=Survey_df.withColumn("From_Date",to_date(lit("2022-05-21"))).withColumn("To_Date",to_date(lit("2099-06-12")))
     Survey_df1.show()
+
