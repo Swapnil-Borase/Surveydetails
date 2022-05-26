@@ -30,3 +30,6 @@ if __name__ == '__main__':
     Survey_df1.show()
 
 
+    ## to save in target
+    # Survey_df1.write.option("header",True).mode('append').csv(r"E:\DataCloudEngineer\Sparkproject\Surveydetails\Target")
+
