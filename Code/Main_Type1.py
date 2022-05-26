@@ -40,7 +40,7 @@ if __name__ == '__main__':
     # unidf=Survey_df.union(Survey_df2)
     # unidf.show()
     #
-    # partn=Window.partitionBy("Variable_code","Industry_code_ANZSIC06").orderBy(col("Value").desc())
+    # partn=Window.partitionBy("Variable_code","Industry_code_NZSIOC").orderBy(col("Value").desc())
     #
     # finaldf=unidf.withColumn("rank",rank().over(partn))
     # finaldf.show()
