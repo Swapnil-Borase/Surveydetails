@@ -49,7 +49,7 @@ if __name__ == '__main__':
 
     ## to save in target
 
-    #     Survey_df1.write.option("header",True).csv(r"E:\DataCloudEngineer\Sparkproject\Surveydetails\Target")
+    Survey_df1.write.option("header",True).mode("overwrite").csv(r"E:\DataCloudEngineer\Sparkproject\Surveydetails\Target\type_1")
     #
     # Survey_df1.write.format('csv').option("header",True).save(r"E:\Data Cloud Engineer\Sparkproject\Surveydetails\Target\Type_1")
     # print("Success")

@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
     ## Creating Dataframe
 
-    Survey_df=spark.read.csv(path=r"E:\Data Cloud Engineer\Pyspark\Pysparkinput files\Survey Details\annual-enterprise-survey-financial-year-provisional_2022_05_21.csv",inferSchema=True,header=True)
+    Survey_df=spark.read.csv(path=r"E:\DataCloudEngineer\Pyspark\Pysparkinputfiles\Survey Details\annual-enterprise-survey-financial-year-provisional_2022_05_21.csv",inferSchema=True,header=True)
     Survey_df.show()
     Survey_df.printSchema()
 
@@ -31,5 +31,5 @@ if __name__ == '__main__':
 
 
     ## to save in target
-    # Survey_df1.write.option("header",True).mode('append').csv(r"E:\DataCloudEngineer\Sparkproject\Surveydetails\Target")
+    Survey_df1.write.option("header",True).mode('overwrite').csv(r"E:\DataCloudEngineer\Sparkproject\Surveydetails\Target\type_2")
 
